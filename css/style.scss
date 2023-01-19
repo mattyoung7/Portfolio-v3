@@ -111,6 +111,10 @@ button:hover {
         color: $white;
         padding-bottom: 2.5rem;
         text-decoration: underline 3px $turquoise;
+        -webkit-text-decoration-line:  underline;
+        -webkit-text-decoration-color: $turquoise;
+        -webkit-text-decoration-style: solid;
+        -webkit-text-decoration-thickness: 3px;
     }
 }
 
