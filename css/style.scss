@@ -5,6 +5,10 @@ $dark-grey: #242424;
 $light-grey: #D9D9D9;
 $white: #FFFFFF;
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -96,11 +100,13 @@ button:hover {
 }
 
 .skills,
-.projects {
+.projects,
+.contact {
     padding: 2.5rem 1rem;
 
     .skills-title,
-    .projects-title {
+    .projects-title,
+    .contact-title {
         font-size: 2.5rem;
         color: $white;
         padding-bottom: 2.5rem;
@@ -172,6 +178,37 @@ button:hover {
     }
 }
 
+.contact {
+
+    .contact-flex {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+
+        .contact-flex__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            i {
+                color: $white;
+            }
+
+            p {
+                color: $light-grey;
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        padding-top: 5rem;
+        color: $light-grey;
+        font-size: 0.75rem;
+    }
+}
+
 @media screen and (min-width: 730px) {
     button {
         padding: 0.5rem 0;
@@ -222,11 +259,13 @@ button:hover {
     }
     
     .skills,
-    .projects {
+    .projects,
+    .contact {
         padding: 3rem 2rem;
     
         .skills-title,
-        .projects-title {
+        .projects-title,
+        .contact-title {
             font-size: 4.5rem;
             padding-bottom: 4rem;
         }
@@ -288,6 +327,14 @@ button:hover {
                     padding-bottom: 1rem;
                 }
             }
+        }
+    }
+
+    .contact {
+
+        .contact-flex {
+            flex-direction: row;
+            justify-content: center;
         }
     }
 }

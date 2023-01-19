@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -82,13 +86,19 @@ button:hover {
 }
 
 .skills,
-.projects {
+.projects,
+.contact {
   padding: 2.5rem 1rem;
 }
 .skills .skills-title,
 .skills .projects-title,
+.skills .contact-title,
 .projects .skills-title,
-.projects .projects-title {
+.projects .projects-title,
+.projects .contact-title,
+.contact .skills-title,
+.contact .projects-title,
+.contact .contact-title {
   font-size: 2.5rem;
   color: #FFFFFF;
   padding-bottom: 2.5rem;
@@ -143,6 +153,30 @@ button:hover {
   gap: 1rem;
 }
 
+.contact .contact-flex {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.contact .contact-flex .contact-flex__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.contact .contact-flex .contact-flex__item i {
+  color: #FFFFFF;
+}
+.contact .contact-flex .contact-flex__item p {
+  color: #D9D9D9;
+}
+.contact .copyright {
+  text-align: center;
+  padding-top: 5rem;
+  color: #D9D9D9;
+  font-size: 0.75rem;
+}
+
 @media screen and (min-width: 730px) {
   button {
     padding: 0.5rem 0;
@@ -184,13 +218,19 @@ button:hover {
     width: 70%;
   }
   .skills,
-.projects {
+.projects,
+.contact {
     padding: 3rem 2rem;
   }
   .skills .skills-title,
 .skills .projects-title,
+.skills .contact-title,
 .projects .skills-title,
-.projects .projects-title {
+.projects .projects-title,
+.projects .contact-title,
+.contact .skills-title,
+.contact .projects-title,
+.contact .contact-title {
     font-size: 4.5rem;
     padding-bottom: 4rem;
   }
@@ -236,6 +276,10 @@ button:hover {
     font-size: 1.125rem;
     color: #D9D9D9;
     padding-bottom: 1rem;
+  }
+  .contact .contact-flex {
+    flex-direction: row;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 992px) {
