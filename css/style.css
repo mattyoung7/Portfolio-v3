@@ -104,10 +104,10 @@ button:hover {
   padding-bottom: 2.5rem;
   -webkit-text-decoration: underline 3px #4EE1A0;
           text-decoration: underline 3px #4EE1A0;
-  -webkit-text-decoration-line: underline;
-  -webkit-text-decoration-color: #4EE1A0;
-  -webkit-text-decoration-style: solid;
-  -webkit-text-decoration-thickness: 3px;
+  -webkit-text-decoration-line: underline !important;
+  -webkit-text-decoration-color: #4EE1A0 !important;
+  -webkit-text-decoration-style: solid !important;
+  -webkit-text-decoration-thickness: 3px !important;
 }
 
 .skills {
